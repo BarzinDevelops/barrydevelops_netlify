@@ -120,9 +120,8 @@ article header, section{
 
 /* Media Queries */
 
-@media screen and (max-width: 600px){   
+@media screen and (max-width: 600px) and (min-width: 400px){   
     .nav_header nav ul li {
-        /* background-color: red; */
         font-size: 1.2em;
         font-weight: bold;
         display: block;
@@ -135,8 +134,23 @@ article header, section{
     body{
         padding-top: 150px;
     }
-    /* .nav_header, main, footer{
-        padding: 10px;
-    } */
 }
 
+@media screen and (max-width: 400px){   
+    .nav_header nav ul li {
+        font-size: 1.2em;
+        font-weight: bold;
+        display: block;
+        margin-left: 20px;
+        line-height: 1.5em;
+    }
+    .nav_header{
+        padding: 20px;
+    }
+    body{
+        padding-top: 150px;
+    }
+    main {
+        padding: 20px;
+    }
+}
