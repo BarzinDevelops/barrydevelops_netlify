@@ -178,3 +178,21 @@ article header, section{
         margin-top: 10px;
     }
 }
+
+@media all and (orientation: landscape){
+    body{
+        background-color: Red;
+        /* padding: 0px; */
+    }
+    main{
+        padding: 10px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: medium;
+    }
+    .nav_header, footer{
+        /* margin-bottom: auto; */
+        padding: 20px;
+    }
+
+}
