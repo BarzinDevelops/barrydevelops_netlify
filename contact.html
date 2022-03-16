@@ -13,10 +13,10 @@
     <header class="nav_header">
         <nav>
             <ul class="nav_header_ul">
-                <li><a class="menu_items" href="index.html">Home Page</a></li>
-                <li><a class="menu_items" href="about.html">About me page</a></li>
-                <li><a class="menu_items" href="my_projects.html">My Projects Page</a></li>
-                <li><a class="menu_items" href="contact.html">My Contact Page</a></li>
+                <li><a class="menu_items" href="index.html" tabindex="5">Home Page</a></li>
+                <li><a class="menu_items" href="about.html" tabindex="6">About me page</a></li>
+                <li><a class="menu_items" href="my_projects.html" tabindex="7">My Projects Page</a></li>
+                <li><a class="menu_items" href="contact.html" tabindex="8">My Contact Page</a></li>
             </ul>
         </nav>
     </header>
@@ -24,21 +24,21 @@
 
     <div class="wrapper">
         <div class="success">
-            <form name="contact" method="POST" data-netlify="true" action="success.html">
+            <form name="contact" method="POST" data-netlify="true" action="success.html" tabindex="9">
                 <p>
-                    <label for="name">Name:</label>
-                    <input id="name" type="text" placeholder="Enter your Name here..">
+                    <label for="name" tabindex="10">Name:</label>
+                    <input id="name" type="text" placeholder="Enter your Name here.." autofocus tabindex="1">
                 </p>
                 <p>
                     <label for="email">Email:</label>
-                    <input id="email" type="email" placeholder="Enter your Mail-address here...">
+                    <input id="email" type="email" placeholder="Enter your Mail-address here..." tabindex="2">
                 </p>
                 <p>
                     <label for="comment">Comment:</label>
-                    <textarea rows="10" cols="30" placeholder="Enter your comments..."></textarea>
+                    <textarea rows="10" cols="30" placeholder="Enter your comments..." tabindex="3"></textarea>
                 </p>
                 <p>
-                    <input id="submit" type="submit" value="Submit">
+                    <input id="submit" type="submit" value="Submit" tabindex="4">
                 </p>
             </form>
         </div>

@@ -19,6 +19,16 @@ body{
     height: 100vh;
     font-size: 1.2em;
 }
+
+.titles,.menu_items, footer,
+h1,h2, h3, h4 {
+    font-family: 'Permanent Marker', cursive;
+ 
+}
+
+.menu_items, footer{
+    color: whitesmoke;
+}
 /* ------------------------------------------------------------------------------ */
 
 form p{
@@ -26,15 +36,27 @@ form p{
     flex-direction: column;
     align-items: flex-start;
 }
-input{
+input, textarea{
     padding: 10px;
     border: 0;
+    outline: none;
+
+}
+input:focus, 
+textarea:focus, 
+#submit:hover, #submit:focus{
+    background-color: rgb(74, 199, 193);
 }
 #submit{
-    padding: 10px 20px;
+    padding: 15px 30px;
     border: 0;
     border-radius: 5px;
     justify-self: flex-start;
+    background-color: rgba(44, 42, 42, 0.9);
+    color: whitesmoke;
+}
+#submit:hover, #submit:focus{
+
 }
 
 .nav_header{
