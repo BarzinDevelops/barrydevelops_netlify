@@ -138,11 +138,11 @@ article header, section{
 
 @media screen and (max-width: 400px){   
     .nav_header nav ul li {
-        font-size: 1.2em;
+        font-size: 1em;
         font-weight: bold;
         display: block;
-        margin-left: 20px;
-        line-height: 1.5em;
+        margin-left: 10px;
+        line-height: 1.3em;
     }
     .nav_header{
         padding: 20px;
@@ -151,6 +151,30 @@ article header, section{
         padding-top: 150px;
     }
     main {
-        padding: 20px;
+        font-size: 1.0em;
+        margin: 5px;
+        padding: 5px;
+    }
+    .article_section, .article_header{
+        margin: 5px;
+        padding: 5px;
+    }
+    .photo{
+        width: 220px;
+        margin: 10px 0px;
+        box-shadow: 1px 5px 15px 4px rgba(14, 10, 10, 0.39);
+    }
+    .my_photo{
+        width: 200px;
+        margin: 0 auto ;
+        
+    }
+
+    h1{
+        font-size: 1.2em;
+    }
+    h3{
+        font-size: 1.0em;
+        margin-top: 10px;
     }
 }
