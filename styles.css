@@ -165,29 +165,43 @@ article header, section{
         line-height: 1.3em;
     }
     .nav_header{
-        padding: 30px;
+        padding: 10px;
         background-color: red;
+        position: fixed;
+        top: 0;
+    }
+    footer{
+        /* position: fixed;
+        bottom: 0; */
+        padding: 10px;
+        font-size: 0.8em;
+
     }
     body{
-        padding-top: 150px;
+        /* overflow-y:auto; */
+        /* padding-top: 150px; */
     }
     main {
+        /* overflow-x:hidden;
+        overflow-y: auto; */
         font-size: 1.0em;
-        margin: 5px;
-        padding: 5px;
+        /* margin: 0px 0; */
+        padding: 1px;
     }
     .article_section, .article_header{
         margin: 5px;
         padding: 5px;
     }
     .photo{
-        width: 220px;
-        margin: 10px 0px;
+        /* width: 220px; */
+        /* margin: 10px 0px; */
         box-shadow: 1px 5px 15px 4px rgba(14, 10, 10, 0.39);
     }
     .my_photo{
-        width: 200px;
-        margin: 0 auto ;
+        display: flex;
+        justify-content: center;
+        /* width: 300px; */
+        /* margin: 0 auto ; */
     }
 
     h1{
