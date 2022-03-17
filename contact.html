@@ -24,21 +24,19 @@
 
     <div class="wrapper">
         <div class="success">
-            <form name="contact" method="POST" data-netlify="true" action="success.html">
+            <form name="contact" method="POST" action="success.html" data-netlify="true">
                 <p>
-                    <label for="name" tabindex="10">Name:</label>
-                    <input id="name" name="name" type="text" placeholder="Enter your Name here.." autofocus
-                        tabindex="1">
+                    <label>Name:</label>
+                    <input name="name" type="text" placeholder="Enter your Name here.." autofocus tabindex="1">
                 </p>
                 <p>
-                    <label for="email">Email:</label>
-                    <input id="email" name="email" type="email" placeholder="Enter your Mail-address here..."
-                        tabindex="2">
+                    <label>Email:</label>
+                    <input name="email" type="email" placeholder="Enter your Mail-address here..." tabindex="2">
                 </p>
                 <p>
-                    <label for="comment">Comment:</label>
-                    <textarea id="comment" name="comment" rows="10" cols="30" placeholder="Enter your comments..."
-                        tabindex="3"></textarea>
+                    <label>Comment:</label>
+                    <textarea name="comment" rows="10" cols="30" placeholder="Enter your comments..." tabindex="3">
+                    </textarea>
                 </p>
                 <p>
                     <button id="submit" type="submit" tabindex="4">Send</button>
