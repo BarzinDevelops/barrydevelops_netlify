@@ -95,15 +95,16 @@ h1, p{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     flex-wrap: wrap;
-    padding: 25px;
+    /* padding: 25px; */
 }
 
 .nav_header nav ul li{
-    font-size: 1.em;
+    font-size: 1em;
+    width: 100%;
     font-weight: bold;
-    padding: 5px;
+    padding: 0px;
 }
 
 nav a {
