@@ -4,14 +4,15 @@
     padding: 0;
 }
 /* Font imports */
-@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&family=Permanent+Marker&family=Roboto+Slab:wght@300&display=swap');
 
 body{
     /* background-color: black; */
     width: 100%;
     height: 100%;
-    font-family: 'karma', Arial;
+    font-family: 'Karma', serif;
     font-family: 'Permanent Marker', cursive;
+    font-family: 'Roboto Slab', serif;
 }
 .container{
     height: 100vh;
