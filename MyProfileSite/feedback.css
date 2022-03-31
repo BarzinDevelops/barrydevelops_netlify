@@ -1,7 +1,7 @@
-* {
+*, *::after, *::before {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
 
 }
 
@@ -18,6 +18,8 @@ body{
     width: 100%;
     height: 100vh;
     font-size: 1.2em;
+    padding: 0;
+    margin: 0;
 }
 
 .titles,.menu_items, footer,
@@ -187,9 +189,11 @@ nav li{
 .wrapper{
     background-color: rgb(40, 184, 141);
     display: flex;
+    margin: 10px 0;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
+    overflow: scroll;
 }
 /* ------------------------------------------------------------------------------ */
