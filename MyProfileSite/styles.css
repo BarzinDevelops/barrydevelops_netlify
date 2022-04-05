@@ -2,38 +2,36 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
-
-/*---------------------------------IMPORTS----------------------------------------*/
-
+/*----------------------IMPORTS--------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------- */
 /* global settings */
-
 body{
     width: 100%;
     height: 100%;
-    font-size: 1.2em;
     padding: 0;
     margin: 0;
 }
-
 .main_container{
     height: 100vh;
-    /* border: 3px solid red; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    /* padding: 10px; */
 }
-
-
-.titles,.menu_items, footer,
-h1,h2, h3, h4 {
+.wrapper{
+    font-size: 1.1rem;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.76);
+    color: whitesmoke;
+    margin:  5%;
+    height: 100vh;
+    overflow: scroll; 
+}
+h1,h2,h3,h4,h5,h6, .menu_items, footer{
     font-family: 'Permanent Marker', cursive;
-
+    padding: 10px 0;
+    color: lightseagreen;
 }
 hr{
     border: none;
@@ -42,185 +40,189 @@ hr{
     height: 0.15em;
     background-color: black;
     margin: 20px;
-
 }
 .menu_items{
     color: whitesmoke;
     margin: 20px;
 }
+/* --------------------------------------------------- */
+/* Project Card styles */
+.project_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
 
+}
+.project_card{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    min-width: 30%;
+}
+.card_title{
+    padding: 10px 15px;
+    background-color: purple;
+}
+.card_img{
+    padding: 10px 20px; 
+    height: 200px;
+    background-color: rgb(51, 13, 87);
+}
+.card_description{
+    padding: 10px 20px; 
+    color: whitesmoke;
+    background-color: purple;
+}
+/* ------------------------------------------------------- */
 
-/* ------------------------------------------------------------------------------ */
 
 .nav_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(44, 42, 42, 0.9);
-    /* flex: 1; */
-    width: 100%;
-    padding: 20px;
     text-align: center;  
-    color: whitesmoke;
-    /* margin-bottom: 300px; */
-    /* position: fixed; */
+    width: 100%;
+    padding:  10px 0;
 }
-
-main{
-
-    align-self: flex-end;
-    justify-self: flex-end;
-    background-color: rgb(48, 95, 73);
-    font-size: 1.2em;
-    margin-top: 50px; 
-    padding: 20px;
-    overflow: scroll;
+.current_page{
+    color: rgb(29, 116, 101);
 }
-
 footer{
     background-color: rgba(44, 42, 42, 0.9);
     padding: 20px;
     width: 100%;
-    margin-top: 10px;
     color: whitesmoke;
 }
-
 .nav_header nav ul li{
-    font-size: 1.4em;
+    font-size: 1.1em;
     font-weight: bold;
 }
-
 nav a, a {
-    color: black;
+    color: whitesmoke;
+    
     text-decoration: none;
     list-style: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent; /*prevents size change when hovering over the link*/
 }
 nav a:hover , a:hover{
-    color: rgb(29, 116, 101);
-    font-weight: bolder;
+    color: rgb(228, 133, 9);
+    font-weight: bold;
     text-decoration: none;
     list-style: none;
 }
-
 nav li{
     list-style: none;
 }
-
-.clearfix:after {
-    content:"";
-    display:block;
-    clear:both;
-}
-
-.titles{
-    font-family: 'Permanent Marker', cursive;
-}
-
-.latte_title{
-    float: left;
-    margin-top: 5px;
-    margin-right: 5px;
-}
-.cap_title{
-    float: left;
-    margin-top: -1px;
-    margin-right: 1px;
-}
-
-article header, section{
-    margin: 20px;
-}
-
 /* about.html specific styles: */
-.aboutme_header{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-
-.aboutme_article1 {
-    margin: 0;
+.img_div{
+    display: flex;
     padding: 10px;
-
+    justify-content: center;
 }
-.photo{
-    width: 250px;
-    margin: 5px;
+.images{
+    /* min-width: 90%; */
+    max-width: 80%;
+    margin: 10px;
     box-shadow: 1px 5px 15px 4px rgba(14, 10, 10, 0.39);
 }
-
-.my_photo{
-    width: 260px;
-    margin: 20px auto;
-    
-}
-
-
-/* Media Queries */
-
-@media screen and (max-width: 600px) and (min-width: 400px){   
-    .nav_header nav ul li {
-        color: whitesmoke;
-        font-size: 1.2em;
-        font-weight: bold;
-        display: block;
-        margin-left: 20px;
-        line-height: 1.3em;
-    }
-    main {
-        margin-top: 5em;
-        font-size: 1.1em;
-        padding: 1px;
-    }
-    .nav_header{
-        padding: 30px;
-    background-color: rgba(44, 42, 42, 0.9);
-    }
-    section{
-        padding: 0;
-    }
-}
-
-@media screen and (max-width: 400px){   
-    .nav_header nav ul li {
-        font-size: 1em;
-        font-weight: bold;
-        display: block;
-        margin-left: 10px;
-        line-height: 1.3em;
-    }
-    /* .nav_header{
-        position: fixed;
-        top: 0;
-    } */
-    footer{
-        padding: 10px;
-        font-size: 0.8em;
-
-    }
-    main {
-        font-size: 1.0em;
-        padding: 1px;
-        margin: 0px;
-    }
-    .article_section, .article_header{
-        margin: 5px;
-        padding: 0px;
-    }
-    .photo{
-        margin: 0px;
+@media screen and (min-width: 600px){
+    .images{
+        /* width: 90%; */
+        max-width: 400px;
+        margin: 10px;
         box-shadow: 1px 5px 15px 4px rgba(14, 10, 10, 0.39);
     }
-    .my_photo{
-        display: flex;
-        justify-content: center;
-    }
-
-    h1{
-        font-size: 1.1em;
-        margin: 0px;
-        padding: 0px;
-    }
-    h3{
-        font-size: 1.0em;
-        margin-top: 10px;
-    }
 }
+---------------------------------------------- */
+/*  Home page styles */ 
+
+.latte_img, .cappu_img{
+    background-color: rgba(0, 0, 0, 0.582);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.latte_title, .cap_title{
+    font-size: 1.2rem;
+    text-align: center;
+    align-self: center;
+    justify-self: start; 
+}
+/* --------------------------------------------------- */
+/*  FORM Styles */
+form{
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 20px;
+}
+.all_form_inputs {
+    margin-top: 5px;
+}
+.individual_label_container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    justify-items: start;
+}
+.individual_label_container > input {
+    margin-right: 25px;
+}
+.apron{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.apron > input{
+    padding: 0;
+    max-width: 100px;
+    flex: 1 1 50px;
+}
+.apron > label{
+    margin-right: 5px;
+    flex: 1 0 auto;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    outline: none;
+}
+#recipe_file{
+    padding: 0;
+}
+input:focus, 
+textarea:focus, 
+button:hover, .upload_label:hover, button:focus{
+    background-color: rgb(74, 199, 193);
+}
+
+.form_buttons{
+    display: flex;
+    gap: 5px;
+color: rgb(29, 116, 101);
+}
+.form_btn{
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 5px;
+    justify-self: flex-start;
+    background-color: rgb(29, 116, 101);
+    color: whitesmoke;
+}
+.upload_label{
+    border-radius: 5px;
+    background-color: rgb(29, 116, 101);
+    padding: 10px 15px;
+}
+.upload_btn{
+    display: none;
+}
+
+/*------------------------------------------------ */
