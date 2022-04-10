@@ -11,17 +11,18 @@
 body{
     width: 100%;
     height: 100%;
+    min-width: 320px;
     padding: 0;
     margin: 0;
 }
 .main_container{
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
 .wrapper{
     font-size: 1.1rem;
-    padding: 15px;
+    padding: 15px 10%;
     background-color: rgba(0, 0, 0, 0.76);
     color: whitesmoke;
     margin:  5%;
@@ -61,7 +62,7 @@ hr{
     min-width: 30%;
 }
 .card_title{
-    padding: 10px 15px;
+    padding: 10px 13px;
     background-color: purple;
 }
 .card_img{
@@ -70,7 +71,7 @@ hr{
     background-color: rgb(51, 13, 87);
 }
 .card_description{
-    padding: 10px 20px; 
+    padding: 10px 15px; 
     color: whitesmoke;
     background-color: purple;
 }
@@ -80,9 +81,9 @@ hr{
 .nav_header{
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: rgba(44, 42, 42, 0.9);
     text-align: center;  
+    line-height: 1.5;
     width: 100%;
     padding:  10px 0;
 }
@@ -100,8 +101,7 @@ footer{
     font-weight: bold;
 }
 nav a, a {
-    color: whitesmoke;
-    
+    color: whitesmoke;  
     text-decoration: none;
     list-style: none;
     font-weight: bold;
@@ -117,6 +117,9 @@ nav li{
     list-style: none;
 }
 /* about.html specific styles: */
+.aboutme_header{
+    text-align: center;
+}
 .img_div{
     display: flex;
     padding: 10px;
@@ -128,17 +131,9 @@ nav li{
     margin: 10px;
     box-shadow: 1px 5px 15px 4px rgba(14, 10, 10, 0.39);
 }
-@media screen and (min-width: 600px){
-    .images{
-        /* width: 90%; */
-        max-width: 400px;
-        margin: 10px;
-        box-shadow: 1px 5px 15px 4px rgba(14, 10, 10, 0.39);
-    }
-}
+
 ---------------------------------------------- */
 /*  Home page styles */ 
-
 .latte_img, .cappu_img{
     background-color: rgba(0, 0, 0, 0.582);
     background-position: center center;
@@ -155,8 +150,7 @@ nav li{
 /* --------------------------------------------------- */
 /*  FORM Styles */
 form{
-    margin: 0 auto;
-    padding: 10px;
+    padding: 5% 10%;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -226,3 +220,55 @@ color: rgb(29, 116, 101);
 }
 
 /*------------------------------------------------ */
+/* Media Queries */
+@media all and (min-width: 900px){
+
+    .nav_header, footer{
+        background-color: rgba(22, 15, 15, 0.856);
+    }
+    .nav_header_ul{
+        padding: 50px 0;
+        display: flex;
+    }
+    .wrapper{
+        font-size: 1.3rem;
+        background-color: rgba(0, 0, 0, 0.596);
+        height: 100%;
+        margin: 0% 10%;
+    } 
+    .article_header{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .images{
+        max-width: 400px;
+        margin: 10px;
+        box-shadow: 1px 5px 15px 4px rgba(14, 10, 10, 0.39);
+    }
+    /* Project Card styles */
+    .project_cards{
+        padding-top: 30px;;
+        justify-content: center;
+    }
+    .project_card{
+        min-width: 60%;
+        max-width: 90%;
+    }
+    /* Form pages styles */
+    .success{
+        display: flex;
+    justify-content: center; 
+    }
+    form{
+        flex: 1 0 0;
+        max-width: 1000px; 
+    }
+    .individual_label_container{
+        display: grid;
+        grid-template-columns: repeat(2, 20px);
+        align-items:start;
+    }
+
+    /* --------------------------------------------------- */
+}

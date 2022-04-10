@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="stylesheet" href="feedback.css"> -->
     <title>Index html page</title>
 </head>
 
@@ -19,32 +18,34 @@
                     <li><a class="menu_items" href="about.html" tabindex="6">About me page</a></li>
                     <li><a class="menu_items" href="my_projects.html" tabindex="7">My Projects Page</a></li>
                     <li><a class="menu_items current_page" href="contact.html" tabindex="8">My Contact Page</a></li>
-                    <li><a class="menu_items" href="favorite_recipes.html" tabindex="8">Favorite Recipes</a></li>
+                    <li><a class="menu_items" href="favorite_recipes.html" tabindex="8">Favorite
+                            Recipes</a></li>
                 </ul>
             </nav>
         </header>
 
         <div class="wrapper">
             <div class="success">
-                <form name="contact" method="POST" action="success.html" data-netlify="true">
+                <form class="my_form" name="favorite_recipes" method="POST" action="success.html" data-netlify="true">
                     <p>
-                        <label>Name:</label>
+                        <label class="all_form_labels">Name:</label>
                         <input class="all_form_inputs" name="name" type="text" placeholder="Enter your Name here.."
-                            autofocus tabindex="1">
+                            autofocus>
                     </p>
                     <p>
-                        <label>Email:</label>
+                        <label class="all_form_labels">Email:</label>
                         <input class="all_form_inputs" name="email" type="email"
-                            placeholder="Enter your Mail-address here..." tabindex="2">
+                            placeholder="Enter your Mail-address here...">
                     </p>
                     <p>
-                        <label>Comment:</label>
-                        <textarea class="all_form_inputs" name="comment" rows="10" cols="30"
-                            placeholder="Enter your comments..." tabindex="3">
+                        <label class="all_form_labels">Comments:</label>
+                        <textarea class="all_form_inputs" name="biography" rows="10" cols="30"
+                            placeholder="Enter your Biography...">
                     </textarea>
                     </p>
                     <div class="form_buttons">
-                        <button class="form_btn" type="submit">Send</button>
+                        <button class="form_btn" type="submit" tabindex="4">Send</button>
+                        <button class="form_btn" type="reset" tabindex="4">Reset Form</button>
                     </div>
                 </form>
             </div>
@@ -55,6 +56,5 @@
         </footer>
     </div>
 </body>
-
 
 </html>
