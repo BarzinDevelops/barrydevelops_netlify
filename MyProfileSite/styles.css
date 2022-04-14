@@ -344,10 +344,8 @@ button:focus {
 
 
 /*----------- Media Queries ----------------*/
-@media all and (min-width: 800px) {
-    .main_container {
-        /* border: 3px solid rgb(45, 13, 172); */
-    }
+@media all and (min-width: 750px) {
+
 /*Gallery style: */
     .container {
         grid-template-columns: repeat(6, 1fr);
