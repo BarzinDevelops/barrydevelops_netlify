@@ -33,6 +33,11 @@ body {
     overflow: auto;
 }
 
+section{
+    margin: 10px 0;
+}
+
+
 h1,
 h2,
 h3,
@@ -163,7 +168,16 @@ nav li {
     margin: 10px;
     box-shadow: 1px 5px 15px 4px rgba(14, 10, 10, 0.39);
 }
-
+.art_sect_video{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+iframe{
+    width: 100%;
+    height: auto;
+    
+}
 ---------------------------------------------- */
 
 /*  Home page styles */
@@ -427,7 +441,6 @@ button:focus {
         margin-top: 10px;
         align-self: flex-start;
     }
-
     .images {
         max-width: 400px;
         margin: 10px;
