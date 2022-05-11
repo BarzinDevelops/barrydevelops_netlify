@@ -371,9 +371,6 @@ button:focus {
 /*----------- Media Queries ----------------*/
 @media all and (min-width: 750px) {
   /*Gallery style: */
-  .container {
-    /* grid-template-columns: repeat(6, 1fr); */
-  }
 
   /* setting differen grid-column size as option for each gallery-item div */
 
