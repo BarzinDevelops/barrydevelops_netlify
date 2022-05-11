@@ -14,10 +14,12 @@
 }
   /* Link on new project pages to return to the main projects page overview */
   .link_to_main {
+    @include centerFlex();
     padding: 10px;
     font-size: 0.8em;
     &__text{
-        margin-left: 10px;
+        color: rgb(65, 24, 65);
+        font-weight: bold;
     }
   }
 
