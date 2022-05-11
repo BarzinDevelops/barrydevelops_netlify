@@ -14,7 +14,7 @@
 }
   /* Link on new project pages to return to the main projects page overview */
   .link_to_main {
-      border: solid;
+    border: solid;
     @include centerFlex();
     text-decoration: none;
     gap: 10px;
