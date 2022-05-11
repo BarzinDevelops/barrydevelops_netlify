@@ -97,9 +97,6 @@ hr {
   height: 100%;
   display: flex;
   justify-content: center;
-  /* padding: 10px 20px; */
-  /* height: 200px; */
-  /* background-color: rgb(51, 13, 87); */
 }
 .card_img__images {
   width: 100%;
