@@ -12,24 +12,6 @@
     box-sizing: border-box;
 
 }
-  /* Link on new project pages to return to the main projects page overview */
-  .link_to_main {
-    border: solid;
-    @include centerFlex();
-    text-decoration: none;
-    gap: 10px;
-    padding: 10px;
-    font-size: 0.9em;
-    .link-to-main__icon{
-        color: rgb(177, 48, 15);
-    }
-    .link-to-main__text{
-        margin-top: 5px;
-        color: rgb(177, 48, 15);
-        font-weight: bold;
-    }
-  }
-
 body{
     width: 100%;
     height: 100vh;
