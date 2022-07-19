@@ -11,7 +11,7 @@ body {
 }
 
 .main-container {
-  max-width: 100%;
+  max-width: 100vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -30,10 +30,9 @@ body {
 }
 
 .main-container .nav {
-  max-width: 100%;
   display: -ms-grid;
   display: grid;
-  padding: 100px 40px;
+  padding: 40px;
   -ms-grid-columns: (100%)[auto-fit];
       grid-template-columns: repeat(auto-fit, 100%);
   gap: 10px;
@@ -53,6 +52,7 @@ body {
 }
 
 .main-container .nav .input-label-wrapper {
+  border: 3px solid red;
   width: 300px;
 }
 
@@ -67,7 +67,7 @@ body {
 
 .main-container .nav .input-label-wrapper label,
 .main-container .nav .custom {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .main-container .nav .custom {
