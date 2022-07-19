@@ -38,7 +38,7 @@ body{
         border: 4px solid rgb(211, 232, 20);
 
         .position-wrapper{
-            border: 4px solid rgb(211, 232, 20);
+            border: 5px solid rgb(9, 188, 30);
             display: flex;
             flex-direction: column;
             max-width: 200px;
@@ -56,10 +56,6 @@ body{
             .input-label-wrapper label{
                 margin-left: 3px;
                 line-height: 1.6;
-            }
-            .input-label-wrapper label,
-            .custom {
-                // font-size: 1.1rem;
             }
             .custom{
                 padding: 5px 10px;
