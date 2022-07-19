@@ -20,7 +20,7 @@ body {
 .main-container .link-to-projects-overview {
   text-align: center;
   color: #fafa05;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   padding: 15px;
 }
 
@@ -51,7 +51,6 @@ body {
 }
 
 .main-container .nav .input-label-wrapper {
-  border: 3px solid red;
   width: 300px;
 }
 
@@ -66,7 +65,7 @@ body {
 
 .main-container .nav .input-label-wrapper label,
 .main-container .nav .custom {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .main-container .nav .custom {
@@ -103,7 +102,7 @@ body {
 }
 
 .main-container .movies-list {
-  padding: 0 20px;
+  max-width: 100%;
   display: -ms-grid;
   display: grid;
   gap: 50px;

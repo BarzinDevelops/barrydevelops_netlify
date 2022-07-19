@@ -9,14 +9,12 @@ body{
     background-color: rgb(3, 16, 16);
 }
 .main-container{
-
-    // width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
     .link-to-projects-overview {
         text-align: center;
         color: rgb(250, 250, 5);
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         padding: 15px;
         
         i{
@@ -24,7 +22,6 @@ body{
         }
     }
     .nav{
-        // max-width: 100%;
         display: grid;
         padding:  40px;
         grid-template-columns: repeat(auto-fit, 100%);
@@ -43,7 +40,7 @@ body{
             height: 1.4em;
         }
         .input-label-wrapper{
-            border: 3px solid red;
+            // border: 3px solid red;
             width: 300px;
         }
         .input-label-wrapper :nth-child(2){
@@ -55,7 +52,7 @@ body{
         }
         .input-label-wrapper label,
         .custom {
-            font-size: 1.5rem;
+            font-size: 1.1rem;
         }
         .custom{
             padding: 5px 10px;
@@ -71,8 +68,8 @@ body{
         }
     }
     .movies-list{
-        padding: 0 20px;
-        // width:100%;
+        // padding: 0 20px;
+        max-width: 100%;
         display: grid;
         gap: 50px;
         grid-template-columns: repeat(1, auto);
